@@ -1,0 +1,72 @@
+﻿@page
+@model IndexModel
+@{
+    ViewData["Title"] = "SQL Playground";
+}
+
+<div class="container mt-4">
+    <!-- Cabeçalho com nome e descrição -->
+    <h1 class="mb-3">Curso SQL</h1>
+    <p class="lead">
+        Bem-vindo ao Curso SQL gratuito e 100% online, em português!<br />
+        Aprenda SQL na prática diretamente do seu navegador, sem precisar instalar nada.<br />
+        Use o menu lateral para navegar pelas lições e execute comandos em tempo real.
+    </p>
+
+    <hr class="my-4" />
+
+    <!-- Editor SQL -->
+    <h2 class="mb-3">Experimente agora mesmo:</h2>
+
+    <textarea id="sql-input" class="form-control" rows="6">
+SELECT * FROM users;
+    </textarea>
+
+    <button class="btn btn-primary mt-2" onclick="runSQL()">Executar</button>
+
+    <h4 class="mt-4">Resultado:</h4>
+    <pre id="output" class="bg-light p-3 border rounded" style="min-height: 100px;"></pre>
+</div>
+
+<!-- SQL.js via CDN -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/sql.js/1.6.2/sql-wasm.js"></script>
+
+<!-- Script que inicializa o banco e executa os comandos -->
+<script>
+    let db;
+
+    initSqlJs({
+        locateFile: file => `https://cdnjs.cloudflare.com/ajax/libs/sql.js/1.6.2/${file}`
+    }).then(SQL => {
+        db = new SQL.Database();
+        db.run("CREATE TABLE users (id INTEGER, name TEXT);");
+        db.run("INSERT INTO users VALUES (1, 'Alice'), (2, 'Bob'), (3, 'Carol');");
+    });
+
+    function runSQL() {
+        const input = document.getElementById("sql-input").value;
+        const output = document.getElementById("output");
+
+        try {
+            const result = db.exec(input);
+
+            if (result.length === 0) {
+                output.textContent = "Comando executado com sucesso.";
+                return;
+            }
+
+            const columns = result[0].columns;
+            const values = result[0].values;
+
+            let table = columns.join(" | ") + "\n";
+            table += "-".repeat(columns.join(" | ").length) + "\n";
+            values.forEach(row => {
+                table += row.join(" | ") + "\n";
+            });
+
+            output.textContent = table;
+        } catch (err) {
+            output.textContent = "Erro: " + err.message;
+        }
+    }
+</script>

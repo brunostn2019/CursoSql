@@ -1,0 +1,149 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\dev\\CursoSql\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{904F9778-3AB8-40B9-9B48-819588C534EB}|CursoSql\\CursoSql.csproj|c:\\dev\\cursosql\\cursosql\\pages\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{904F9778-3AB8-40B9-9B48-819588C534EB}|CursoSql\\CursoSql.csproj|solutionrelative:cursosql\\pages\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{904F9778-3AB8-40B9-9B48-819588C534EB}|CursoSql\\CursoSql.csproj|c:\\dev\\cursosql\\cursosql\\wwwroot\\css\\site.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
+      "RelativeMoniker": "D:0:0:{904F9778-3AB8-40B9-9B48-819588C534EB}|CursoSql\\CursoSql.csproj|solutionrelative:cursosql\\wwwroot\\css\\site.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{904F9778-3AB8-40B9-9B48-819588C534EB}|CursoSql\\CursoSql.csproj|c:\\dev\\cursosql\\cursosql\\pages\\shared\\_layout.cshtml.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
+      "RelativeMoniker": "D:0:0:{904F9778-3AB8-40B9-9B48-819588C534EB}|CursoSql\\CursoSql.csproj|solutionrelative:cursosql\\pages\\shared\\_layout.cshtml.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{904F9778-3AB8-40B9-9B48-819588C534EB}|CursoSql\\CursoSql.csproj|c:\\dev\\cursosql\\cursosql\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{904F9778-3AB8-40B9-9B48-819588C534EB}|CursoSql\\CursoSql.csproj|solutionrelative:cursosql\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{904F9778-3AB8-40B9-9B48-819588C534EB}|CursoSql\\CursoSql.csproj|c:\\dev\\cursosql\\cursosql\\pages\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{904F9778-3AB8-40B9-9B48-819588C534EB}|CursoSql\\CursoSql.csproj|solutionrelative:cursosql\\pages\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{904F9778-3AB8-40B9-9B48-819588C534EB}|CursoSql\\CursoSql.csproj|c:\\dev\\cursosql\\cursosql\\pages\\lessons\\insert.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{904F9778-3AB8-40B9-9B48-819588C534EB}|CursoSql\\CursoSql.csproj|solutionrelative:cursosql\\pages\\lessons\\insert.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{904F9778-3AB8-40B9-9B48-819588C534EB}|CursoSql\\CursoSql.csproj|c:\\dev\\cursosql\\cursosql\\pages\\lessons\\select.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{904F9778-3AB8-40B9-9B48-819588C534EB}|CursoSql\\CursoSql.csproj|solutionrelative:cursosql\\pages\\lessons\\select.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{904F9778-3AB8-40B9-9B48-819588C534EB}|CursoSql\\CursoSql.csproj|c:\\dev\\cursosql\\cursosql\\pages\\index.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{904F9778-3AB8-40B9-9B48-819588C534EB}|CursoSql\\CursoSql.csproj|solutionrelative:cursosql\\pages\\index.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 3,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "site.css",
+              "DocumentMoniker": "C:\\dev\\CursoSql\\CursoSql\\wwwroot\\css\\site.css",
+              "RelativeDocumentMoniker": "CursoSql\\wwwroot\\css\\site.css",
+              "ToolTip": "C:\\dev\\CursoSql\\CursoSql\\wwwroot\\css\\site.css",
+              "RelativeToolTip": "CursoSql\\wwwroot\\css\\site.css",
+              "ViewState": "AgIAAK0AAAAAAAAAAAAqwMoAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
+              "WhenOpened": "2025-07-27T22:40:39.492Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "Index.cshtml.cs",
+              "DocumentMoniker": "C:\\dev\\CursoSql\\CursoSql\\Pages\\Index.cshtml.cs",
+              "RelativeDocumentMoniker": "CursoSql\\Pages\\Index.cshtml.cs",
+              "ToolTip": "C:\\dev\\CursoSql\\CursoSql\\Pages\\Index.cshtml.cs",
+              "RelativeToolTip": "CursoSql\\Pages\\Index.cshtml.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-27T22:21:26.041Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "Select.cshtml",
+              "DocumentMoniker": "C:\\dev\\CursoSql\\CursoSql\\Pages\\Lessons\\Select.cshtml",
+              "RelativeDocumentMoniker": "CursoSql\\Pages\\Lessons\\Select.cshtml",
+              "ToolTip": "C:\\dev\\CursoSql\\CursoSql\\Pages\\Lessons\\Select.cshtml",
+              "RelativeToolTip": "CursoSql\\Pages\\Lessons\\Select.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAEMAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-07-27T22:19:31.967Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "_Layout.cshtml",
+              "DocumentMoniker": "C:\\dev\\CursoSql\\CursoSql\\Pages\\Shared\\_Layout.cshtml",
+              "RelativeDocumentMoniker": "CursoSql\\Pages\\Shared\\_Layout.cshtml",
+              "ToolTip": "C:\\dev\\CursoSql\\CursoSql\\Pages\\Shared\\_Layout.cshtml",
+              "RelativeToolTip": "CursoSql\\Pages\\Shared\\_Layout.cshtml",
+              "ViewState": "AgIAAFEAAAAAAAAAAAAAAFcAAAAaAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-07-27T22:17:56.587Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\dev\\CursoSql\\CursoSql\\Pages\\Index.cshtml",
+              "RelativeDocumentMoniker": "CursoSql\\Pages\\Index.cshtml",
+              "ToolTip": "C:\\dev\\CursoSql\\CursoSql\\Pages\\Index.cshtml",
+              "RelativeToolTip": "CursoSql\\Pages\\Index.cshtml",
+              "ViewState": "AgIAAC0AAAAAAAAAAADwv0gAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-07-27T22:02:37.604Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\dev\\CursoSql\\CursoSql\\Program.cs",
+              "RelativeDocumentMoniker": "CursoSql\\Program.cs",
+              "ToolTip": "C:\\dev\\CursoSql\\CursoSql\\Program.cs",
+              "RelativeToolTip": "CursoSql\\Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABgAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-27T22:01:11.451Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "_Layout.cshtml.css",
+              "DocumentMoniker": "C:\\dev\\CursoSql\\CursoSql\\Pages\\Shared\\_Layout.cshtml.css",
+              "RelativeDocumentMoniker": "CursoSql\\Pages\\Shared\\_Layout.cshtml.css",
+              "ToolTip": "C:\\dev\\CursoSql\\CursoSql\\Pages\\Shared\\_Layout.cshtml.css",
+              "RelativeToolTip": "CursoSql\\Pages\\Shared\\_Layout.cshtml.css",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAADAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
+              "WhenOpened": "2025-07-27T22:45:28.223Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Insert.cshtml",
+              "DocumentMoniker": "C:\\dev\\CursoSql\\CursoSql\\Pages\\Lessons\\Insert.cshtml",
+              "RelativeDocumentMoniker": "CursoSql\\Pages\\Lessons\\Insert.cshtml",
+              "ToolTip": "C:\\dev\\CursoSql\\CursoSql\\Pages\\Lessons\\Insert.cshtml",
+              "RelativeToolTip": "CursoSql\\Pages\\Lessons\\Insert.cshtml",
+              "ViewState": "AgIAACcAAAAAAAAAAAAAAAEAAAASAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-07-27T22:29:46.406Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

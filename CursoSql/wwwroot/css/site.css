@@ -1,0 +1,205 @@
+/* Temas básicos */
+header.navbar {
+    position: sticky;
+    top: 0;
+    z-index: 1030; /* para ficar acima do conteúdo */
+}
+
+body.theme-light {
+    background-color: #ffffff;
+    color: #000000;
+}
+
+body.theme-dark {
+    background-color: #121212;
+    color: #ffffff;
+}
+
+body.theme-pink {
+    background-color: #fff0f6;
+    color: #9b1d64;
+}
+
+body.theme-blue {
+    background-color: #e7f1ff;
+    color: #003366;
+}
+
+/* Ajustes para textarea, pre e inputs */
+textarea, pre, .form-control {
+    background-color: inherit;
+    color: inherit;
+    border-color: #ccc;
+}
+
+/* Navbar (barra superior) tema */
+body.theme-light .navbar {
+    background-color: #343a40;
+    color: white;
+}
+
+body.theme-dark .navbar {
+    background-color: #212529;
+    color: white;
+}
+
+body.theme-pink .navbar {
+    background-color: #d6336c;
+    color: white;
+}
+
+body.theme-blue .navbar {
+    background-color: #0056b3;
+    color: white;
+}
+
+    body.theme-light .navbar a.navbar-brand,
+    body.theme-dark .navbar a.navbar-brand,
+    body.theme-pink .navbar a.navbar-brand,
+    body.theme-blue .navbar a.navbar-brand {
+        color: white;
+    }
+
+/* Menu lateral */
+body.theme-light nav.sidebar {
+    background-color: #f8f9fa;
+    color: black;
+}
+
+body.theme-dark nav.sidebar {
+    background-color: #343a40;
+    color: white;
+}
+
+body.theme-pink nav.sidebar {
+    background-color: #ffe3f0;
+    color: #9b1d64;
+}
+
+body.theme-blue nav.sidebar {
+    background-color: #cfe2ff;
+    color: #003366;
+}
+
+body.theme-light nav.sidebar a.nav-link {
+    color: black;
+}
+
+body.theme-dark nav.sidebar a.nav-link {
+    color: white;
+}
+
+body.theme-pink nav.sidebar a.nav-link {
+    color: #9b1d64;
+}
+
+body.theme-blue nav.sidebar a.nav-link {
+    color: #003366;
+}
+
+/* Link ativo e hover no menu lateral */
+body.theme-light nav.sidebar a.nav-link.active,
+body.theme-light nav.sidebar a.nav-link:hover {
+    background-color: #1b6ec2;
+    color: white;
+}
+
+body.theme-dark nav.sidebar a.nav-link.active,
+body.theme-dark nav.sidebar a.nav-link:hover {
+    background-color: #375a7f;
+    color: white;
+}
+
+body.theme-pink nav.sidebar a.nav-link.active,
+body.theme-pink nav.sidebar a.nav-link:hover {
+    background-color: #9b1d64;
+    color: white;
+}
+
+body.theme-blue nav.sidebar a.nav-link.active,
+body.theme-blue nav.sidebar a.nav-link:hover {
+    background-color: #004085;
+    color: white;
+}
+
+/* Botõe*/
+.theme-btn {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    border: 2px solid #ccc;
+    cursor: pointer;
+    transition: border-color 0.3s ease;
+    box-shadow: 0 0 3px rgba(0,0,0,0.2);
+}
+
+    .theme-btn:hover {
+        border-color: #666;
+    }
+
+    .theme-btn.selected {
+        border-color: #000;
+        box-shadow: 0 0 5px 2px #000;
+    }
+
+    /* Cores dos botões */
+    .theme-btn[data-theme="light"] {
+        background-color: #ffffff;
+    }
+
+    .theme-btn[data-theme="dark"] {
+        background-color: #121212;
+    }
+
+    .theme-btn[data-theme="pink"] {
+        background-color: #ffbfdc;
+    }
+
+    .theme-btn[data-theme="blue"] {
+        background-color: #a4c8ff;
+    }
+body.theme-dark pre#output {
+    background-color: #2c2c2c !important;
+    color: #f1f1f1 !important;
+    border-color: #444 !important;
+}
+body.theme-light header.navbar {
+    background-color: #343a40; /* cinza escuro, padrão */
+    color: white;
+}
+
+body.theme-dark header.navbar {
+    background-color: #212529; /* quase preto */
+    color: white;
+}
+
+body.theme-pink header.navbar {
+    background-color: #9b1d64; /* rosa escuro */
+    color: white;
+}
+
+body.theme-blue header.navbar {
+    background-color: #003366; /* azul escuro */
+    color: white;
+}
+body.theme-light footer.footer {
+    background-color: #343a40; /* cinza escuro, padrão */
+    color: white;
+}
+
+body.theme-dark footer.footer {
+    background-color: #212529; /* quase preto */
+    color: white;
+}
+
+body.theme-pink footer.footer {
+    background-color: #9b1d64; /* rosa escuro */
+    color: white;
+}
+
+body.theme-blue footer.footer {
+    background-color: #003366; /* azul escuro */
+    color: white;
+}
+
+
