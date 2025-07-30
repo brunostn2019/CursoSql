@@ -31,3 +31,4 @@ C:\dev\CursoSql\CursoSql\obj\Debug\net8.0\refint\CursoSql.dll
 C:\dev\CursoSql\CursoSql\obj\Debug\net8.0\CursoSql.pdb
 C:\dev\CursoSql\CursoSql\obj\Debug\net8.0\CursoSql.genruntimeconfig.cache
 C:\dev\CursoSql\CursoSql\obj\Debug\net8.0\ref\CursoSql.dll
+C:\dev\CursoSql\CursoSql\obj\Debug\net8.0\CursoSql.sourcelink.json

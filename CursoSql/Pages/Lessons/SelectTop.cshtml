@@ -1,0 +1,82 @@
+@page
+@model SelectTopModel
+@{
+    ViewData["Title"] = "Lição: SELECT TOP";
+}
+
+<h2>Lição: SELECT TOP</h2>
+
+<p>
+    Você pode usar a sintaxe do SQL Server (<code>SELECT TOP X ...</code>) ou do SQLite (<code>LIMIT X</code>). O sistema converte automaticamente para <code>LIMIT</code> ao executar.
+</p>
+
+<textarea id="sql-input" class="form-control" rows="6">
+SELECT TOP 2 * FROM users;
+</textarea>
+
+<button id="execute-btn" class="btn btn-primary mt-2" onclick="runSQL()" disabled>Executar</button>
+
+<h4 class="mt-4">Resultado:</h4>
+<pre id="output" class="bg-light p-3 border rounded" style="min-height: 100px;"></pre>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/sql.js/1.6.2/sql-wasm.js"></script>
+
+<script>
+    let db = null;
+
+    initSqlJs({
+        locateFile: file => `https://cdnjs.cloudflare.com/ajax/libs/sql.js/1.6.2/${file}`
+    }).then(SQL => {
+        db = new SQL.Database();
+        db.run("CREATE TABLE users (id INTEGER, name TEXT);");
+        db.run("INSERT INTO users VALUES (1, 'Alice'), (2, 'Bob'), (3, 'Carol');");
+        document.getElementById('execute-btn').disabled = false;
+    });
+
+    function runSQL() {
+        if (!db) {
+            alert('O banco de dados ainda está carregando, aguarde...');
+            return;
+        }
+
+        let input = document.getElementById("sql-input").value;
+        const output = document.getElementById("output");
+
+        // Lógica para converter SELECT TOP X ... para SELECT ... LIMIT X;
+        // Regex para encontrar SELECT TOP X
+        const topRegex = /^(\s*SELECT\s+)TOP\s+(\d+)\s+/i;
+        const match = input.match(topRegex);
+        if (match) {
+            const topValue = match[2];
+            // Remove TOP X
+            input = input.replace(topRegex, '$1');
+            // Remove o último ponto e vírgula, se houver
+            input = input.replace(/;(\s*)$/, '');
+            // Adiciona LIMIT X;
+            input = input + ` LIMIT ${topValue};`;
+        }
+
+        try {
+            const result = db.exec(input);
+
+            if (result.length === 0) {
+                output.textContent = "Comando executado com sucesso.";
+                return;
+            }
+
+            const columns = result[0].columns;
+            const values = result[0].values;
+
+            let table = columns.join(" | ") + "\n";
+            table += "-".repeat(columns.join(" | ").length) + "\n";
+
+            values.forEach(row => {
+                table += row.join(" | ") + "\n";
+            });
+
+            output.textContent = table;
+        } catch (err) {
+            output.textContent = "Erro: " + err.message;
+        }
+    }
+</script>

@@ -1,0 +1,64 @@
+@page
+@model SelectDistinctModel
+@{
+    ViewData["Title"] = "Lição: SELECT DISTINCT";
+}
+
+<h2>Lição: SELECT DISTINCT</h2>
+
+<textarea id="sql-input" class="form-control" rows="6">
+SELECT DISTINCT name FROM users;
+</textarea>
+
+<button id="execute-btn" class="btn btn-primary mt-2" onclick="runSQL()" disabled>Executar</button>
+
+<h4 class="mt-4">Resultado:</h4>
+<pre id="output" class="bg-light p-3 border rounded" style="min-height: 100px;"></pre>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/sql.js/1.6.2/sql-wasm.js"></script>
+
+<script>
+    let db = null;
+
+    initSqlJs({
+        locateFile: file => `https://cdnjs.cloudflare.com/ajax/libs/sql.js/1.6.2/${file}`
+    }).then(SQL => {
+        db = new SQL.Database();
+        db.run("CREATE TABLE users (id INTEGER, name TEXT);");
+        db.run("INSERT INTO users VALUES (1, 'Alice'), (2, 'Bob'), (3, 'Alice');");
+        document.getElementById('execute-btn').disabled = false;
+    });
+
+    function runSQL() {
+        if (!db) {
+            alert('O banco de dados ainda está carregando, aguarde...');
+            return;
+        }
+
+        const input = document.getElementById("sql-input").value;
+        const output = document.getElementById("output");
+
+        try {
+            const result = db.exec(input);
+
+            if (result.length === 0) {
+                output.textContent = "Comando executado com sucesso.";
+                return;
+            }
+
+            const columns = result[0].columns;
+            const values = result[0].values;
+
+            let table = columns.join(" | ") + "\n";
+            table += "-".repeat(columns.join(" | ").length) + "\n";
+
+            values.forEach(row => {
+                table += row.join(" | ") + "\n";
+            });
+
+            output.textContent = table;
+        } catch (err) {
+            output.textContent = "Erro: " + err.message;
+        }
+    }
+</script>
